@@ -17,11 +17,12 @@ const upload = multer({storage: storage});
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'c237_culinary_cove'
+    host: 'sql.freedb.tech',
+    user: 'freedb_root ',
+    password:'#BUauJ*!7Tj6V29',
+    database: 'freedb_Culinary Cove'
 });
+
 connection.connect((err) => {
 if (err) {
 console.error('Error connecting to MySQL:', err);
@@ -385,5 +386,7 @@ app.get('/deletestudent/:id', (req,res) => {
         }
     })
 })
+
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
