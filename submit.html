@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/homepage.html">CulinaryCove</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/recipe.html">View Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/submit.html">Submit Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile.html">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Submit a New Recipe</h1>
+        <form>
+            <div class="form-group">
+                <label for="recipeTitle">Recipe Title</label>
+                <input type="text" class="form-control" id="recipeTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="recipeIngredients">Ingredients</label>
+                <textarea class="form-control" id="recipeIngredients" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipeInstructions">Instructions</label>
+                <textarea class="form-control" id="recipeInstructions" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipeImage">Upload Image</label>
+                <input type="file" class="form-control-file" id="recipeImage">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
